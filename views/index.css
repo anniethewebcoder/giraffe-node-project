@@ -24,8 +24,7 @@ html, body {
 .container {
     margin: 0 auto;
     width: 960px;
-    background-color: #fff;
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.8);
     height: 100vh;
     text-align: center;
 }
@@ -33,4 +32,8 @@ html, body {
 h1 {
     margin: 0;
     padding-top: 1em;
+}
+
+#happyheart {
+    width: 50%;
 }
