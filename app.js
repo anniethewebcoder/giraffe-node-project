@@ -5,10 +5,8 @@ const app = express()
 
 require("dotenv").config()
 
+app.use(express.static('views'))
 
-app.get("/", (req, res) => {
-    res.send("Hello")
-})
 const port = process.env.PORT || 3000
 
 const start = async() => {
