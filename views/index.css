@@ -27,6 +27,7 @@ html, body {
     background-color: rgba(255, 255, 255, 0.8);
     height: 100vh;
     text-align: center;
+
 }
 
 h1 {
@@ -36,4 +37,64 @@ h1 {
 
 #happyheart {
     width: 50%;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.intro div {
+    width: 40%;
+}
+
+.testimonial {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+}
+
+@media(max-width: 480px) {
+    .testimonial {
+        width: 100vw;
+    }
+    
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
 }
