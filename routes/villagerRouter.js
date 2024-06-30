@@ -2,9 +2,9 @@ const express = require("express")
 const router = express.Router()
 
 const {
-    getCarousel
+    getAllVillagers
 } = require("../controllers/villagerController")
 
-router.route("/").get(getCarousel)
+router.route("/").get(getAllVillagers)
 
 module.exports = router
