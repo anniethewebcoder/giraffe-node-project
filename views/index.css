@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Special Elite", 'Courier New', Courier, monospace;
+}
+
+.background {
+    background-image: url('./assets/stardewbackground.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 1em;
+}
+
+.intro {
+    display: flex;
+    width: 720px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 340px;
+    margin: 10px;
+}
+
+.item img {
+    width: 340px;
+}
+
+.testimonial{
+    margin: 0 auto;
+    width: 720px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.panel-container {
+    list-style-type: none;
+}
+
