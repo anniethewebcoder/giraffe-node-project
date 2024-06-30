@@ -1,11 +1,11 @@
-const express = require("express")
 require("express-async-errors")
-
-const app = express()
-
 require("dotenv").config()
 
+const express = require("express")
+const app = express()
 app.use(express.static('views'))
+
+const connectDB = require('./db/connect')
 
 const port = process.env.PORT || 3000
 
